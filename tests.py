@@ -4,7 +4,7 @@ import unittest
 class DjangoFunctionalCase(unittest.TestCase):
 
     def setUp(self):
-        self.browser = webdriver.Firefox()
+        self.browser = webdriver.Firefox(executable_path='./geckodriver')
 
     def test_first(self):
         self.browser.get('http://google.com')
