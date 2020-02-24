@@ -7,7 +7,7 @@ class DjangoFunctionalCase(unittest.TestCase):
         self.browser = webdriver.Firefox(executable_path='./geckodriver')
 
     def test_first(self):
-        self.browser.get('https://www.google.com')
+        self.browser.get('http://www.google.com')
         assert self.browser.page_source.find('google')
     
     def tearDown(self):
